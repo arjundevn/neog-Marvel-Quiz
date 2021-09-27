@@ -7,6 +7,8 @@ highScore=4;
 
 console.log(chalk. red("Marvel quiz")+"\n\nPlease select the right option number and hit enter. \n")
 
+var userName = readlinesync.question("\nPlease enter your name\n");
+
 questionOne = {
   question: "Which MCU movie featured Spider-Man’s first appearance?\n\n1) Spider-Man: Homecoming\n2) Captain America: Civil War\n3) Iron Man 3\n4) Avengers: Age of Ultron\n\n",
   answer: "2"
@@ -63,12 +65,12 @@ var q5 = readlinesync.question(questionFive.question);
 qnA(q5, questionFive.answer);
 
 if(score>highScore){
-  console.log((chalk.black(chalk.bgWhite("\nYour final score is: "+(chalk.green(score))+"!! Congragulations, you have achieved a new high score!!\n\nPlease send a screenshot to upadate this high score"))));
+  console.log((chalk.black(chalk.bgWhite("\nYou have completed the quiz "+userName+". Your final score is: "+(chalk.green(score))+"!! Congragulations, you have achieved a new high score!!\n\nPlease send a screenshot to upadate this high score"))));
 }
 else if(score==highScore){
-  console.log((chalk.black(chalk.bgWhite("\nYour final score is: "+(chalk.green(score))+"!! Congragulations, you have equalled the high score!!"))));
+  console.log((chalk.black(chalk.bgWhite("\nYou have completed the quiz "+userName+". Your final score is: "+(chalk.green(score))+"!! Congragulations, you have equalled the high score!!"))));
 }
 
 else {
-  console.log((chalk.black(chalk.bgWhite("\nYour final score is: "+(chalk.green(score))+"!! High score is: "+highScore))));
+  console.log((chalk.black(chalk.bgWhite("\nYou have completed the quiz "+userName+". Your final score is: "+(chalk.green(score))+"!! High score is: "+highScore))));
 }
