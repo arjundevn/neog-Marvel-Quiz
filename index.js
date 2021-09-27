@@ -4,7 +4,8 @@ var chalk = require("chalk");
 score =0;
 highScore=4; 
 
-console.log(chalk. red("Marvel quiz")+"\n\nPlease select the right option and hit enter. \n")
+
+console.log(chalk. red("Marvel quiz")+"\n\nPlease select the right option number and hit enter. \n")
 
 questionOne = {
   question: "Which MCU movie featured Spider-Man’s first appearance?\n\n1) Spider-Man: Homecoming\n2) Captain America: Civil War\n3) Iron Man 3\n4) Avengers: Age of Ultron\n\n",
